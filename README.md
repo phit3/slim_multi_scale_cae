@@ -1,1 +1,1 @@
-# small_multi_scale_cae
+# Small multi-scale CAE
