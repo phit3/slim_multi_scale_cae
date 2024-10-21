@@ -1,1 +1,1 @@
-# Small multi-scale CAE
+# Slim multi-scale CAE
