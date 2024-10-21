@@ -1,5 +1,5 @@
 # Slim multi-scale CAE
-Reproduction package for the Slim multi-scale CAE. 
+Reproduction package for the Slim multi-scale CAE paper.
 
 Before starting any model training, please make sure that the required libraries are installed, the desired dataset is provided, and the config.yaml was setup correctly.
 
