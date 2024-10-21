@@ -7,6 +7,7 @@ import os
 
 from snapshot_data import SnapshotData
 from cae_controller import CAEController
+from metrics import Metrics
 
 # check workspace
 if not os.path.exists('data'):
@@ -71,4 +72,7 @@ else:
     cae.train(train_dl, valid_dl)
 
 # CAE inference
-cae.infer(test_dl)
+targets, reconstructions = cae.infer(test_dl)
+print('Calculating metrics...')
+nmss = Metrics.nmss(targets.cpu().numpy(), reconstructions.cpu().detach().numpy(), train)
+print(f'test NMSS: {nmss}')
